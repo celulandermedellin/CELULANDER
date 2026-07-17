@@ -62,16 +62,31 @@
     background:var(--card);
     border:1px solid var(--line);
     border-radius:12px;
-    padding:16px 18px;
+    padding:14px 18px;
     text-decoration:none;
     color:var(--ink);
     transition:border-color 0.15s ease, transform 0.15s ease;
   }
   a.link-card:active{ transform:scale(0.98); }
   a.link-card:hover{ border-color:var(--accent); }
+  .link-left{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-align:left;
+  }
+  .link-logo{
+    width:38px;
+    height:38px;
+    object-fit:contain;
+    border-radius:8px;
+    background:#fff;
+    padding:4px;
+    flex-shrink:0;
+  }
   .link-name{ font-weight:600; font-size:1.02rem; }
   .link-desc{ color:var(--muted); font-size:0.78rem; margin-top:2px; }
-  .arrow{ color:var(--accent); font-size:1.1rem; }
+  .arrow{ color:var(--accent); font-size:1.1rem; flex-shrink:0; margin-left:10px; }
   footer{
     margin-top:40px;
     color:var(--muted);
@@ -88,41 +103,67 @@
 
     <div class="links">
       <a class="link-card" href="https://personas.sistecredito.com/" target="_blank" rel="noopener">
-        <div>
-          <div class="link-name">Sistecrédito</div>
-          <div class="link-desc">Solicitud de crédito personal</div>
+        <div class="link-left">
+          <img class="link-logo" src="logo-sistecredito.png" alt="Sistecrédito">
+          <div>
+            <div class="link-name">Sistecrédito</div>
+            <div class="link-desc">Solicitud de crédito personal</div>
+          </div>
         </div>
         <span class="arrow">→</span>
       </a>
 
       <a class="link-card" href="https://preapproval.addi.com/" target="_blank" rel="noopener">
-        <div>
-          <div class="link-name">Addi</div>
-          <div class="link-desc">Preaprobación de crédito</div>
+        <div class="link-left">
+          <img class="link-logo" src="logo-addi.png" alt="Addi">
+          <div>
+            <div class="link-name">Addi</div>
+            <div class="link-desc">Preaprobación de crédito</div>
+          </div>
         </div>
         <span class="arrow">→</span>
       </a>
 
-      <a class="link-card" href="https://solicitud.agaval.com/?centroCosto=38&validacionIdentidad=1&utm_source=credito&utm_medium=directo&utm_campaign=directo&_ga=2.91558874.1358887372.1782150502-774839997.1770047585&_gl=1*12uv0hu*_gcl_au*NjgyMzMyODI3LjE3NzY3MzM2OTI.*_ga*MTUwNTAzMTE3NC4xNzM2ODkyNjI3*_ga_BJ9X5DJPMN*czE3ODQyNDUyNTckbzEwMiRnMSR0MTc4NDI0NTQxOCRqNjAkbDAkaDA." target="_blank" rel="noopener">
-        <div>
-          <div class="link-name">Agaval</div>
-          <div class="link-desc">Crédito Agaval</div>
+      <a class="link-card" href="https://www.agaval.com/credito-agaval" target="_blank" rel="noopener">
+        <div class="link-left">
+          <img class="link-logo" src="logo-agaval.png" alt="Agaval">
+          <div>
+            <div class="link-name">Agaval</div>
+            <div class="link-desc">Crédito Agaval</div>
+          </div>
         </div>
         <span class="arrow">→</span>
       </a>
 
       <a class="link-card" href="https://esmio.appmikro.com/customer/customer-signup" target="_blank" rel="noopener">
-        <div>
-          <div class="link-name">Esmiopcion</div>
-          <div class="link-desc">Regístrate y solicita tu crédito</div>
+        <div class="link-left">
+          <img class="link-logo" src="logo-esmiopcion.png" alt="Es Mi Opción">
+          <div>
+            <div class="link-name">Es Mi Opción</div>
+            <div class="link-desc">Regístrate y solicita tu crédito</div>
+          </div>
         </div>
         <span class="arrow">→</span>
       </a>
 
       <a class="link-card" href="https://slm.bancodebogota.com/ml57eyue" target="_blank" rel="noopener">
-        <div>
-          <div class="link-name">Banco de Bogotá</div>
-          <div class="link-desc">Solicitud de crédito</div>
+        <div class="link-left">
+          <img class="link-logo" src="logo-bancobogota.png" alt="Banco de Bogotá">
+          <div>
+            <div class="link-name">Banco de Bogotá</div>
+            <div class="link-desc">Solicitud de crédito</div>
+          </div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="link-card" href="https://checkout.wompi.co/l/VPOS_6EK34D" target="_blank" rel="noopener">
+        <div class="link-left">
+          <img class="link-logo" src="logo-nequi.png" alt="Tarjetas y crédito Nequi">
+          <div>
+            <div class="link-name">Tarjetas y crédito Nequi</div>
+            <div class="link-desc">Paga con tarjeta o crédito Nequi</div>
+          </div>
         </div>
         <span class="arrow">→</span>
       </a>
